@@ -28,7 +28,15 @@ int main()
     wifi.init(); //Reset
     wifi.connect(); //Use DHCP
     pc.printf("IP Address is %s \n\r", wifi.getIPAddress());
-
+    if(wifi.getIPAddress()==true)
+    {
+        LED=1;
+        
+        }
+    else
+    {
+        LED=!LED;
+        }
     // Initialize the M2X client
     Client client;
     M2XStreamClient m2xClient(&client, m2xKey,1,"52.22.150.98"); // api-m2x.att.com
