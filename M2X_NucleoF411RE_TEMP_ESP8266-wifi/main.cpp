@@ -7,8 +7,8 @@
 /*
 *  ESP8266 Wifi Config for nucleo 411
 */
-ESP8266Interface wifi(D8,D2,D3,"4free","qwerty12p",115200); // TX,RX,Reset,SSID,Password,Baud 
-// The LED that we want to control
+ESP8266Interface wifi(D8,D2,D3,"4free","qwerty12p",115200); // TX,RX,Reset,SSID,Password,Baud rate
+// The LED that you want to control
 DigitalOut led(LED1);
 
 // Temperature sensor is attached to pin A0, and is an 'analog' sensor 
